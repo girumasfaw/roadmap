@@ -1,0 +1,40 @@
+.task{
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    h5{
+        margin-left: 3px;
+    }
+
+    &:hover{
+        .delete-btn{
+            svg{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.small-txt{
+    width: 50px;
+}
+.week-span{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.delete-btn{
+    cursor: pointer;
+    svg{
+        opacity: 0;
+        transition: opacity 0.2s linear;       
+    }   
+ }
+
+ .task-description{
+     display: flex;
+     justify-content: space-between;
+ }

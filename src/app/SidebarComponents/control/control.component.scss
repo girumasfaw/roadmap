@@ -1,0 +1,64 @@
+.control{
+    background-color: white;
+    border-top-left-radius: 20px;
+    height: 100%;
+    width: 35px;
+    border-right: 1px solid rgb(212, 210, 210);
+    transition: all 0.2s linear;
+
+    &.open{
+        width: 255px;
+    }
+
+    &__content{
+       margin-top: 20px;
+       opacity: 0;
+       transition: all 0.2s linear;
+       &.open{
+         opacity:1;
+      }
+    }
+}
+
+.drawer-toggel{
+    box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
+    color: rgb(107, 119, 140);
+    cursor: pointer;
+    height: 24px;
+    border: 1px solid lightgray;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 24px;
+    background-color: white;
+    transition: left 0.2s linear;
+
+    &:hover{
+        background-color: #F58220;
+    }
+    &.open{
+        left: 244px;
+    }
+}
+
+.create{
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+    &__btn{
+        color: white;
+        background-color: rgb(107, 119, 140);
+        padding: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: color 0.2s linear;
+       &:hover{
+        background-color: #F58220;
+       }
+    }
+
+}
+

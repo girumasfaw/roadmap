@@ -1,0 +1,127 @@
+
+.header{
+    color: #666;
+    font-size: 13px;
+    border-bottom: 1px solid #F7F7F7;
+    height: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timeline-bar{
+    background-color: #374253;
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_heading{
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        
+    }
+}
+
+
+.avatar-wrapper{
+    position: relative;
+    border-radius: 50%;
+    &--user-active{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        z-index: 1;
+        border: 2px solid #292f4c;
+        background-color: #E44258;
+    }
+}
+.avatar{
+    height: 44px;
+    width:  44px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.surface{
+    display: flex;
+    margin-left: 66px;
+    &__side-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;        
+        min-width: 66px;
+        padding: 15px 0px;
+        background-color: rgb(41,47,76);    
+        height: 100vh;
+        position: fixed;  
+        z-index: 1000;          
+    }
+
+    &__app{
+        display: flex;
+        width: 100vw;
+        &--actions{            
+            background-color: #292F4C;
+        }
+        &--gantt{
+            width: 100%;
+        }
+    }
+}
+
+.gantt-header{
+    padding: 60px 10px 10px 10px;
+
+    &__info-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .orange{
+                margin-left: 15px;
+                color: #F58220;
+            }
+        }
+
+        .pills{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: #292F4C;
+            span{
+                border-radius: 15px;
+                color: #b7b7b7;
+                padding: 5px;
+                cursor: pointer;
+
+            }
+
+            .active{
+                color: white;
+                background-color: #F58220;
+             }
+
+
+        }
+    }
+}

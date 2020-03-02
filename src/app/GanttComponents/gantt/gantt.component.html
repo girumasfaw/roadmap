@@ -1,0 +1,7 @@
+<div class="gantt">
+    <app-header class="gantt__row gantt__row--weeks"></app-header>
+    <app-grid-lines class="gantt__row gantt__row--lines"></app-grid-lines>
+    <ng-container *ngFor="let item of ganttService.ganttItems$ | async">
+       <app-row @fade  class="gantt__row" [ngClass]="{'gantt__row--empty': item.bars.length == 0}" [props]="item"></app-row>
+    </ng-container>
+</div>

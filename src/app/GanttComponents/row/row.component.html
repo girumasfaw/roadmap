@@ -1,0 +1,13 @@
+<div class="gantt__row-first">
+   {{props.title}}
+</div>
+<ul class="gantt__row-bars">
+    <app-bar @taskAnimation class="gantt__row-bars--bar" *ngFor="let bar of props.bars" 
+            [props]="bar"
+            [style.background-color]= "bar.status == 'ontrack'? '#38406a': '#38406a'"
+            [style.grid-column-start]="bar.beginWeek"
+            [style.grid-column-end]="bar.endWeek"
+           >
+    </app-bar>
+</ul>
+

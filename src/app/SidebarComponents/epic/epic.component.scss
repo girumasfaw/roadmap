@@ -1,0 +1,51 @@
+.epic{
+    padding: 10px;
+    &__content{
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      padding: 10px;
+
+      &--header{
+        display: flex;
+        justify-content: space-between;
+     }
+    }
+     
+    &:hover{
+        .delete-btn{
+            svg{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.create-box{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.btn{
+    color: white;
+    background-color: #6b778c;
+    padding: 5px;
+    border-radius: 15px;
+    transition: color 0.2s linear;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #F58220;
+    }
+}
+
+.delete-btn{
+   cursor: pointer;
+   svg{
+       opacity: 0;
+       transition: opacity 0.2s linear;       
+   }
+  
+}
+
+
